@@ -19,4 +19,5 @@ class Test001:
     @allure.step("查询")
     def test_004(self):
         allure.attach("买一个手机", "附件")  # 添加步骤描述信息
+        print("hahaa")
         assert False

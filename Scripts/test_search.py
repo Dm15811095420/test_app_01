@@ -18,6 +18,7 @@ class TestSearch:
     def setup_class(self):
         """点击搜索按钮"""
         Page.get_setting().click_search_btn()
+        print(123)
 
     def teardown_class(self):
         Driver.quit_app_driver()
