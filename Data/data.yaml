@@ -1,0 +1,64 @@
+#name: "lili" # 冒号必须是英文格式，每个冒号后必须跟空格
+#Name: "haha"
+# 对象
+# 可以写入python的字典类型数据当作 某个yaml的key的值
+#data: {"name":"111","pwd":"1234"}
+## 相同层级元素 左对齐
+#data1:
+#  name: "1111"
+#  pwd: "1234"
+# yaml文件-格式
+#data2:
+#  - "111" # 短横线 + 空格+ 列表需要储存值
+#  - "nan"
+## python 格式
+#data3:["123","456"]
+#
+## 拼接-json {"key":[{key:value},{key:value}]}
+#data4:
+#  - name: "1111"
+#  - pwd: "123"
+#
+## 纯量
+## 字符串 -特殊情况 会自动转换成python字符串格式
+#name: lili
+#
+## 布尔 -yaml格式
+#bool1: true
+#bool2: false
+#
+## 布尔 -python格式
+#bool3: True
+#bppl2: False
+#
+## 整点 浮点数
+#int1: 122
+#float1: 12.122
+#
+## 空类型 None类型
+## yaml
+#data8: -
+#data11: null
+#data12: Null
+#data13:
+#
+## python 不支持 返回字符串
+#data9: None
+#data10: none
+#
+## 日期类型
+#data1: 2020-11-11 12:12:12 # 返回python类型为：datetime.datetime
+#data2: 2020-11-11 #返回python 类型为：datetime.date
+#data3: 12:12:12 #如果需要时分秒 尽量以字符串形式编写
+## 特殊日期类型 月 日 时分秒 为个位数
+#data4: 2020-06-02 02:02:02 # 某个位置需要个位数时，需要在前面补0
+#data5: 2020-06-12 # 某个位置为个数时，需要在前面补0
+#
+
+info: &data # 标记锚点，相当于复制一份name和phone节点内容
+  name:"1111"
+  phone:"1333333333"
+
+addr:
+  <<: *data # 引用锚点 使用data锚点的值
+  detail: "朝阳区"

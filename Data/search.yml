@@ -1,0 +1,13 @@
+test_001:
+  input: "1"
+  exp: "休眠"
+
+test_002:
+  input: "i"
+  exp: "ip地址"
+
+test_003:
+  input: "m"
+  exp: "MAC地址"
+
+

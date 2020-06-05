@@ -1,0 +1,97 @@
+{
+  "uid" : "2983a3fb74191bc1",
+  "name" : "test_003",
+  "fullName" : "Scripts.test_001.Test001#test_003",
+  "historyId" : "a14a4cccd8a4f98685134c6449134c94",
+  "time" : {
+    "start" : 1591352507667,
+    "stop" : 1591352507668,
+    "duration" : 1
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert False",
+  "statusTrace" : "self = <Scripts.test_001.Test001 object at 0x0000022DEA617048>\n\n    @allure.step(\"支付\")\n    def test_003(self):\n        allure.attach(\"买一个手机\", \"附件\")  # 添加步骤描述信息\n>       assert False\nE       assert False\n\nScripts\\test_001.py:16: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "AssertionError: assert False",
+    "statusTrace" : "self = <Scripts.test_001.Test001 object at 0x0000022DEA617048>\n\n    @allure.step(\"支付\")\n    def test_003(self):\n        allure.attach(\"买一个手机\", \"附件\")  # 添加步骤描述信息\n>       assert False\nE       assert False\n\nScripts\\test_001.py:16: AssertionError",
+    "steps" : [ {
+      "name" : "支付",
+      "time" : {
+        "start" : 1591352507667,
+        "stop" : 1591352507668,
+        "duration" : 1
+      },
+      "status" : "failed",
+      "statusMessage" : "AssertionError: assert False\n",
+      "statusTrace" : "  File \"c:\\program files\\python36\\lib\\site-packages\\allure_commons\\_allure.py\", line 157, in impl\n    return func(*a, **kw)\n  File \"D:\\黑马学习资料\\APP\\app_day_09\\Scripts\\test_001.py\", line 16, in test_003\n    assert False\n",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "a657fe41a3d78e9e",
+        "name" : "附件",
+        "source" : "a657fe41a3d78e9e.attach",
+        "type" : "text/plain",
+        "size" : 15
+      } ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : true,
+      "attachmentsCount" : 1,
+      "hasContent" : true,
+      "stepsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : true,
+    "attachmentsCount" : 1,
+    "hasContent" : true,
+    "stepsCount" : 1
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "Scripts"
+  }, {
+    "name" : "suite",
+    "value" : "test_001"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test001"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-T0704VS0"
+  }, {
+    "name" : "thread",
+    "value" : "24672-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "Scripts.test_001"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "2983a3fb74191bc1.json",
+  "parameterValues" : [ ]
+}

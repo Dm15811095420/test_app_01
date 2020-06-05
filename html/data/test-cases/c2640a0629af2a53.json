@@ -1,0 +1,117 @@
+{
+  "uid" : "c2640a0629af2a53",
+  "name" : "test_002",
+  "fullName" : "Scripts.test_001.Test001#test_002",
+  "historyId" : "3d58a5f71fd54557d266fa2357ba1912",
+  "time" : {
+    "start" : 1591352507639,
+    "stop" : 1591352507640,
+    "duration" : 1
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert False",
+  "statusTrace" : "self = <Scripts.test_001.Test001 object at 0x0000022DEA5E4898>\n\n    @allure.step(\"登录\")\n    def test_002(self):\n        allure.attach(\"用户名：popo,密码：123456\", \"附件\")  # 添加步骤描述信息\n>       assert False\nE       assert False\n\nScripts\\test_001.py:11: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "AssertionError: assert False",
+    "statusTrace" : "self = <Scripts.test_001.Test001 object at 0x0000022DEA5E4898>\n\n    @allure.step(\"登录\")\n    def test_002(self):\n        allure.attach(\"用户名：popo,密码：123456\", \"附件\")  # 添加步骤描述信息\n>       assert False\nE       assert False\n\nScripts\\test_001.py:11: AssertionError",
+    "steps" : [ {
+      "name" : "登录",
+      "time" : {
+        "start" : 1591352507639,
+        "stop" : 1591352507640,
+        "duration" : 1
+      },
+      "status" : "failed",
+      "statusMessage" : "AssertionError: assert False\n",
+      "statusTrace" : "  File \"c:\\program files\\python36\\lib\\site-packages\\allure_commons\\_allure.py\", line 157, in impl\n    return func(*a, **kw)\n  File \"D:\\黑马学习资料\\APP\\app_day_09\\Scripts\\test_001.py\", line 11, in test_002\n    assert False\n",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "48582654eec6ad7f",
+        "name" : "附件",
+        "source" : "48582654eec6ad7f.attach",
+        "type" : "text/plain",
+        "size" : 32
+      } ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : true,
+      "attachmentsCount" : 1,
+      "hasContent" : true,
+      "stepsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : true,
+    "attachmentsCount" : 1,
+    "hasContent" : true,
+    "stepsCount" : 1
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "Scripts"
+  }, {
+    "name" : "suite",
+    "value" : "test_001"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test001"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-T0704VS0"
+  }, {
+    "name" : "thread",
+    "value" : "24672-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "Scripts.test_001"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 2,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 0,
+        "unknown" : 0,
+        "total" : 2
+      },
+      "items" : [ {
+        "uid" : "6f0e2f8c0cffab69",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: assert False",
+        "time" : {
+          "start" : 1591351015544,
+          "stop" : 1591351015546,
+          "duration" : 2
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "c2640a0629af2a53.json",
+  "parameterValues" : [ ]
+}
